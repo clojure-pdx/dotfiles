@@ -1,6 +1,3 @@
-dotfiles
-========
-
 # Dots
 
 This is a repo to help others bootstrap a development environment for Clojure development.
