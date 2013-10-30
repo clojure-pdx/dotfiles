@@ -1,0 +1,34 @@
+* Basic package management in emacs.
+
+This is a short guide on how to get set up with a package manager in emacs.
+
+** MELPA
+
+[[http://melpa.milkbox.net/#/][MELPA]] stands for MELPA (Milkypostman’s Emacs Lisp Package Archive).
+
+It boasts the following:
+
+- Up-to-date packages built on our servers from upstream source
+- Installable in any recent Emacs using "package.el" - no need to install svn/cvs/hg/bzr/git/darcs etc.
+- Curated - no obsolete, renamed, forked or randomly hacked packages
+- Comprehensive - more packages than any other archive
+- Automatic updates - new commits result in new packages
+- Extensible - contribute recipes via github, and we'll build the packages
+
+** The trouble with MELPA
+
+=Automatic updates - new commits result in new packages=
+
+This means, pushing to master on GitHub results in a new version of the package. Not every
+package maintainer is careful about pushing to master with experimental changes.
+
+Once you install some packages using MELPA, they should be available in =~/.emacs.d/elpa=. I
+strongly recommend putting both your =init.el= and the contents of =~/.emacs.d/elpa= into 
+version control!
+
+** Installing packages with MELPA
+
+Once you've loaded the configuration in =init.el=, use =M-x package-list-packages= to 
+see a list of available packages.
+
+Mark package(s) to be installed by pressing =i=, delete with =d=, and press =x= to perform all the pending operations.
